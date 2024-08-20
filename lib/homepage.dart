@@ -1,5 +1,6 @@
 
-import 'package:fitnessapp1/appoi.dart';
+
+import 'package:fitnessapp1/appoinment.dart';
 import 'package:fitnessapp1/assesementtest1.dart';
 import 'package:flutter/material.dart';
 

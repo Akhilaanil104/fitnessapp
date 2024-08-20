@@ -107,56 +107,79 @@ class _AppointmentPageState extends State<AppointmentPage> {
 
                   var challenge = snapshot.data!.first;
                   return Container(
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.only(top: 16,bottom: 16,left: 16
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.green[100],
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
                       children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                challenge['title'],
-                                style: GoogleFonts.poppins(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    challenge['title'],
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(height: 8),
+                                  Text(
+                                    challenge['subtitle'],
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 16,
+                                      color: Colors.green[700],
+                                    ),
+                                  ),
+                                  SizedBox(height: 8),
+                                  LinearProgressIndicator(
+                                    value: challenge['progress'] / 20,
+                                    backgroundColor: Colors.green[300],
+                                    color: Colors.green[700],
+                                  ),
+                                  SizedBox(height: 8),
+                                  Text(
+                                    "${challenge['progress']} / 20 Complete",
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 14,
+                                      color: Colors.green[700],
+                                    ),
+                                  ),
+                                ],
                               ),
-                              SizedBox(height: 8),
-                              Text(
-                                challenge['subtitle'],
-                                style: GoogleFonts.poppins(
-                                  fontSize: 16,
-                                  color: Colors.green[700],
-                                ),
-                              ),
-                              SizedBox(height: 8),
-                              LinearProgressIndicator(
-                                value: challenge['progress'] / 100,
-                                backgroundColor: Colors.green[300],
-                                color: Colors.green[700],
-                              ),
-                              SizedBox(height: 8),
-                              Text(
-                                "${challenge['progress']} / 100 Complete",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 14,
-                                  color: Colors.green[700],
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                            SizedBox(width: 16),
+                            Image.asset(
+                              challenge['imageUrl'],
+                              height: 80,
+                              fit: BoxFit.contain,
+                            ),
+                          ],
                         ),
-                        SizedBox(width: 16),
-                        Image.asset(
-                          challenge['imageUrl'],
-                          height: 80,
-                          fit: BoxFit.contain,
-                        ),
+                        Row(
+            children: [
+              TextButton(
+                onPressed: () {
+                  
+                },
+                child: Text(
+                  'Continue',
+                  style: TextStyle(color: Colors.blue),
+                ),
+              ),
+              Icon(
+                Icons.play_circle_fill,
+                color: Colors.blue,
+              ),
+            ],
+          ),
+
                       ],
                     ),
                   );

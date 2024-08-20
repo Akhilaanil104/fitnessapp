@@ -669,55 +669,76 @@ class ChallengeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.only(left: 16,top: 16,bottom: 16),
       decoration: BoxDecoration(
         color: Colors.green[100],
         borderRadius: BorderRadius.circular(16),
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  challengeTitle,
-                  style: GoogleFonts.poppins(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      challengeTitle,
+                      style: GoogleFonts.poppins(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      challengeSubtitle,
+                      style: GoogleFonts.poppins(
+                        fontSize: 16,
+                        color: Colors.green[700],
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    LinearProgressIndicator(
+                      value: progress,
+                      backgroundColor: Colors.green[300],
+                      color: Colors.green[700],
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      progressText,
+                      style: GoogleFonts.poppins(
+                        fontSize: 14,
+                        color: Colors.green[700],
+                      ),
+                    ),
+                  ],
                 ),
-                SizedBox(height: 8),
-                Text(
-                  challengeSubtitle,
-                  style: GoogleFonts.poppins(
-                    fontSize: 16,
-                    color: Colors.green[700],
-                  ),
-                ),
-                SizedBox(height: 8),
-                LinearProgressIndicator(
-                  value: progress,
-                  backgroundColor: Colors.green[300],
-                  color: Colors.green[700],
-                ),
-                SizedBox(height: 8),
-                Text(
-                  progressText,
-                  style: GoogleFonts.poppins(
-                    fontSize: 14,
-                    color: Colors.green[700],
-                  ),
-                ),
-              ],
-            ),
+              ),
+              SizedBox(width: 16),
+              Image.asset(
+                imageUrl,
+                height: 100,
+                fit: BoxFit.contain,
+              ),
+            ],
           ),
-          SizedBox(width: 16),
-          Image.asset(
-            imageUrl,
-            height: 100,
-            fit: BoxFit.contain,
+         Row(
+            children: [
+              TextButton(
+                onPressed: () {
+                  
+                },
+                child: Text(
+                  'Continue',
+                  style: TextStyle(color: Colors.blue),
+                ),
+              ),
+              Icon(
+                Icons.play_circle_fill,
+                color: Colors.blue,
+              ),
+            ],
           ),
         ],
       ),
