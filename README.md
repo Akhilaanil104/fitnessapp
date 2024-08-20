@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness App</title>
+    
 </head>
 <body>
 
@@ -28,7 +28,7 @@
 <!-- Screenshots -->
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="assets\screenshot\4.jpeg" alt="Homepage" style="width:100%; height:auto;">
+        <img src="assets\screenshot\4.jpeg" alt="Homepage" style="width:50%; height:auto;">
         <p style="text-align:center;"><em>Homepage - Your fitness journey starts here.</em></p>
     </div>
     <div style="flex: 1; margin: 10px;">
