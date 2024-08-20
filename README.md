@@ -59,7 +59,7 @@
 <ol>
     <li>
         <p><strong>Clone the Repository:</strong></p>
-        <pre><code>git clone https://github.com/yourusername/fitnessapp.git
+        <pre><code>git clone https://github.com/Akhilaanil104/fitnessapp.git
 cd fitnessapp</code></pre>
     </li>
     <li>
