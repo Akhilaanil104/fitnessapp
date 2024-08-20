@@ -58,8 +58,9 @@ class AppointmentDetails extends StatelessWidget {
                         child: Hero(
                           tag: 'man_sitting',
                           child: Image.asset(
-                            'assets/images/healthrisk1.jpg',
-                            height: 150,
+                            'assets/images/health.png',
+                            height: 200,
+                            width: 150,
                           ),
                         ),
                       ),
@@ -103,7 +104,7 @@ class AppointmentDetails extends StatelessWidget {
                     child: Hero(
                       tag: 'man_exercising',
                       child: Image.asset(
-                        'assets/images/healthrisk1.jpg',
+                        'assets/images/health1.png',
                         height: 200,
                       ),
                     ),

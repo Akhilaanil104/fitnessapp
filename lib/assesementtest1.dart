@@ -716,7 +716,7 @@ class ChallengeCard extends StatelessWidget {
           SizedBox(width: 16),
           Image.asset(
             imageUrl,
-            height: 80,
+            height: 100,
             fit: BoxFit.contain,
           ),
         ],
