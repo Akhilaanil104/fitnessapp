@@ -28,19 +28,20 @@
 <!-- Screenshots -->
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="assets\screenshot\4.jpeg" alt="Homepage" style="width:50%; height:auto;">
+        <img src="assets\screenshot\3.jpeg" alt="Homepage" style="width:50%; height:auto;">
         <p style="text-align:center;"><em>Homepage - Your fitness journey starts here.</em></p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="path/to/assessments/screenshot.png" alt="Assessments" style="width:100%; height:auto;">
-        <p style="text-align:center;"><em>Health Assessments - Complete assessments and track your health.</em></p>
+        <img src="assets\screenshot\5.jpeg"  alt="Assessments" style="width:50%; height:auto;">
+        <p style="text-align:center;">
+            <em>Health Assessments - Complete assessments and track your health.</em></p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="path/to/challenges/screenshot.png" alt="Challenges" style="width:100%; height:auto;">
+        <img src="assets\screenshot\1.jpeg" alt="Challenges" style="width:50%; height:auto;">
         <p style="text-align:center;"><em>Fitness Challenges - Stay motivated with engaging challenges.</em></p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="path/to/workout/routines/screenshot.png" alt="Workout Routines" style="width:100%; height:auto;">
+        <img src="assets\screenshot\2.jpeg" alt="Workout Routines" style="width:100%; height:auto;">
         <p style="text-align:center;"><em>Workout Routines - Explore various routines tailored to your fitness level.</em></p>
     </div>
 </div>
